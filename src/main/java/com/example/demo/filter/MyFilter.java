@@ -15,7 +15,6 @@ public class MyFilter extends ZuulFilter {
 	private static Logger log = LoggerFactory.getLogger(MyFilter.class);
 	@Override
 	public boolean shouldFilter() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
