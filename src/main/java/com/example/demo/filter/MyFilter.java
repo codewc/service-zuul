@@ -9,13 +9,20 @@ import org.springframework.stereotype.Component;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
+/**
+ * 
+ * @author wangchun
+ * {@link TokenFilter}
+ */
 @Component
+@Deprecated
 public class MyFilter extends ZuulFilter {
 
 	private static Logger log = LoggerFactory.getLogger(MyFilter.class);
 	@Override
+	@Deprecated
 	public boolean shouldFilter() {
-		return true;
+		return Boolean.FALSE;
 	}
 
 	@Override
